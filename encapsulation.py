@@ -41,3 +41,4 @@ print(hello.get_name())
 
 hello.set_name('Jonathan') #the attrubutes can be change via a set method
 print(hello.get_name())
+
