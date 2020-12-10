@@ -7,11 +7,11 @@ class Salary:
         return (self.pay*12) + self.bonus
 
 
-class Employee: #this Employee class act as the container that contain Salary content
+class Employee: #this Employee class acts as the container that contains Salary content
     def __init__(self, name, age, pay, bonus):
         self.name = name
         self.age = age
-        self.obj_salary = Salary(pay, bonus)
+        self.obj_salary = Salary(pay, bonus)#deligating Salary class (Salary is "part-of" Employee)
     
     def total_salary(self):
         return self.obj_salary.annual_salary()
