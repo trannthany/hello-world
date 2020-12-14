@@ -17,4 +17,7 @@ def is_win(player, opponent):
         or (player == 'p' and opponent == 'r'):
         return True
 
-print(play())
+triiger = ''
+while triiger != 'q':
+    print(play())
+    triiger = input("Type q to quite or any key to continue: \n")
