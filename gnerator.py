@@ -46,4 +46,5 @@ mylist = list_iterator(a)
 for x in mylist:
     print(x)
 
+#generator works well with streaming or a large data, it save memory by working with one data at a time
 
