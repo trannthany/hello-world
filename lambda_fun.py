@@ -50,3 +50,19 @@ print(list(d))
 from functools import reduce
 e = reduce(lambda x, y : x + y, my_list3) # sum values in the list, e store the sum value
 print(e)
+
+
+
+#more about lambda
+
+print((lambda x: x + 1)(2))
+#it is the same as 
+add_one = lambda x: x +1
+print(add_one(2))
+
+full_name = lambda first_name, last_name: f'Full name is: {first_name.title()} {last_name.title()}'
+print(full_name('Thany', 'Trann'))
+
+high_ord_function = lambda x, func: x + func(x)
+print(high_ord_function(2, lambda x: x * x))
+print(high_ord_function(2, lambda x: x + 3))
