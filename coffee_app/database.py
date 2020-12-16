@@ -49,9 +49,9 @@ def add_bean(connection, name, method, rating):
     with connection:
         return connection.execute(INSERT_BEAN, (name, method, rating)).fetchall()
 
-def get_all_beans(connection, name):
+def get_all_beans(connection):
     with connection:
-        return connection.execute(GET_BEANS_BY_NAME, (name,)).fetchall() #we have pass a tuple (name, ), fetchall() return every rows
+        return connection.execute(GET_ALL_BEANS).fetchall() #we have pass a tuple (name, ), fetchall() return every rows
 
 def get_best_preparation_for_beans(connection, name):
     with connection:
