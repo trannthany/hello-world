@@ -57,5 +57,7 @@ def get_best_preparation_for_beans(connection, name):
     with connection:
         return connection.execute(GET_BEST_PREPARATION_FOR_BEAN, (name,)).fetchone()#we one just one row
 
-
+def get_beans_by_name(connection, name):
+    with connection:
+        return connection.execute(GET_BEANS_BY_NAME, (name,)).fetchall()
 
