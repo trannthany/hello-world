@@ -45,6 +45,7 @@ print(fa(3))
 
 print('-----------')
 
+# If you don’t want the default to be shared between subsequent calls, you can write the function like this instead:
 def fb(a, L=None):
     if L is None:
         L = []
@@ -54,3 +55,6 @@ def fb(a, L=None):
 print(fb(1))
 print(fb(2))
 print(fb(3))
+
+
+
