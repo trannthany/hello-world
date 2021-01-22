@@ -1,7 +1,7 @@
 # lambda syntax allows function to be created on the fly.
 # this is known as anonymous
 # this practice is used when passing a simple function as an argument to another function
-# lambda funciton is not poserful as named functions
+# lambda funciton is not powerful as named functions
 # lambda function can only do things that require a single expression - usually equivalent to a single line of code
 
 def my_func(f, arg):
@@ -24,3 +24,5 @@ print(double(7))
 add = lambda x, y: x + y
 print(add(4, 5))
 # It is usually better to define a named function using def instead
+
+# Sololearn
