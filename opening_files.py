@@ -86,13 +86,13 @@ file.close()
 
 
 ## use try, except and finally when working with files
-try:
-    msg = "Hello world!!"
-    file = open("newfile.txt", "w")
-    amount_written = file.write(msg)
-    print(amount_written)
-finally:
-    file.close()
+# try:
+#     msg = "Hello world!!"
+#     file = open("newfile.txt", "w")
+#     amount_written = file.write(msg)
+#     print(amount_written)
+# finally:
+#     file.close()
 
 # The finally will always ensure that the file is close at the end
 
