@@ -1,3 +1,4 @@
+#https://www.youtube.com/watch?v=8DvywoWv6fI&t=6354s
 # a sample class
 class PartyAnimal:
     x = 0 #data

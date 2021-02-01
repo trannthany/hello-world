@@ -10,13 +10,13 @@ def count_char(text, char):
 
 filename = input("Enter a filename: ")
 
-try:
-    with open(filename) as f:
-        text = f.read()
+#try:
+with open(filename) as f:
+    text = f.read()
 
-    for char in "abcdefghijklmnopqrstuvwxyz":
-        perc = 100 * count_char(text, char)/len(text)
-        print("{0} - {1}%".format(char, round(perc, 2)))     
+for char in "abcdefghijklmnopqrstuvwxyz":
+    perc = 100 * count_char(text, char)/len(text)
+    print("{0} - {1}%".format(char, round(perc, 2)))     
     
-except FileNotFoundError as ferr:
-    print(ferr)
+#except FileNotFoundError as ferr:
+#    print(ferr)
