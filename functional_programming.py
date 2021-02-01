@@ -26,4 +26,5 @@ some_list = []
 def impure_function(arg):
     some_list.append(arg)
 
-
+# Avantages of pure function are easier to run in parallel, test, and momoization
+# Disavantages of pure function are over complicate I/O task which require side effects and can be difficult to write in some situation 

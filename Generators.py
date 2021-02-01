@@ -22,28 +22,28 @@ for a in countdown():
 # for i in infinite_sevens():
 #     print(i)
 
-def is_prime(n: int) -> bool:
-    """Primality test using 6k+-1 optimization."""
-    if n <= 3:
-        return n > 1
-    if n % 2 == 0 or n % 3 == 0:
-        return False
-    i = 5
-    while i ** 2 <= n:
-        if n % i == 0 or n % (i + 2) == 0:
-            return False
-        i += 6
-    return True
+# def is_prime(n: int) -> bool:
+#     """Primality test using 6k+-1 optimization."""
+#     if n <= 3:
+#         return n > 1
+#     if n % 2 == 0 or n % 3 == 0:
+#         return False
+#     i = 5
+#     while i ** 2 <= n:
+#         if n % i == 0 or n % (i + 2) == 0:
+#             return False
+#         i += 6
+#     return True
 
-# prime number generator
-def get_primes():
-    num = 2
-    while True:
-        if is_prime(num):
-            yield num
-        num += 1
+# # prime number generator
+# def get_primes():
+#     num = 2
+#     while True:
+#         if is_prime(num):
+#             yield num
+#         num += 1
 
-print(get_primes())
+# print(get_primes())
 
 #Finite generators can be converted into lists by passing them as arguments to the list function
 def numbers(x):
